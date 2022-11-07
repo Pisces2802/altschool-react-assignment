@@ -24,7 +24,8 @@ export default function Users() {
   }
 
   if (!loading && error) {
-    return <>Error</>; hi
+    return <>Error</>;
+    hi;
   }
 
   const style = {
@@ -44,7 +45,7 @@ export default function Users() {
         );
       })}
       {
-        <button 
+        <button
           style={{ color: 'white', backgroundColor: '#150050' }}
           disabled={pageCount <= 1}
           onClick={() => setPageCount((prev) => prev - 1)}
@@ -69,7 +70,11 @@ export default function Users() {
       {Array.from({ length: USERS_PER_PAGE }, (value, index) => index + 1).map(
         (each) => (
           <button
-            style={{ color: 'white', backgroundColor: '#4649FF' }}
+            style={{
+              color: 'white',
+              backgroundColor: '#4649FF',
+              margin: '2px',
+            }}
             onClick={() => setPageCount(each)}
           >
             {each}
