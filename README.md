@@ -1,4 +1,4 @@
-(Live link to the app)[https://react-rl3hgz.stackblitz.io]
+[Live link to the app](https://react-rl3hgz.stackblitz.io)
 
 # altschool-react-assignment
 
